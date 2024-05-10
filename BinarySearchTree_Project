@@ -1,0 +1,25 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+BST’de her düğüm, sol alt ağaçta kendisinden küçük ve sağ alt ağaçta kendisinden büyük değerleri barındırır. 
+Aşamalar:
+1.) Root (Kök): İlk eleman olan 7, ağacın köküdür.
+2.) 5: 7’nin solunda yer alır çünkü 5 < 7.
+3.) 1: 5’in solunda yer alır çünkü 1 < 5.
+4.) 8: 7’nin sağındadır çünkü 8 > 7.
+5.) 3: 1’in sağındadır çünkü 3 > 1 ve 5’in sol alt ağacında yer alır.
+6.) 6: 5’in sağındadır çünkü 6 > 5 ve 7’nin sol alt ağacında yer alır.
+7.) 0: 1’in solundadır çünkü 0 < 1.
+8.) 9: 8’in sağındadır çünkü 9 > 8.
+9.) 4: 3’ün sağındadır çünkü 4 > 3 ve 5’in sol alt ağacında yer alır.
+10.) 2: 3’ün solundadır çünkü 2 < 3.
+
+Bu adımlarla oluşturulan BST’nin görseli:
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+   / \
+  0   3
+     / \
+    2   4
